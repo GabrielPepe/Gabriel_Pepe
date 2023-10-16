@@ -1,0 +1,124 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+#contato{
+    background-image: url('imgs/14363.jpg');
+}
+
+#registro {
+    background-image: url('imgs/458518.jpg');
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 15px 10px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 60px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos para elementos específicos */
+.header {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.description {
+    max-width: 800px;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form {
+    color: #000000;
+    padding: 10px 0 10px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.input-field {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.checkbox {
+    margin-left: 10px;
+}
+
+.text-area {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0051a6;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #d7d4d4;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.informations{
+    padding: 20px;
+    max-width: 600px;
+    font-size: 20px;
+    color: #d7d5d5;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.a{
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.a:hover{
+    color: #a6ffb8;
+    font-size: 28px;
+}

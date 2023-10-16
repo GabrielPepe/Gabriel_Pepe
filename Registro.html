@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="registroStyle.css" />
+  </head>
+  <body id="registro">
+    <main>
+      <section id="container">
+        <h1 class="header">Customer Registration</h1>
+        <p class="description">
+          Fill out the form below so we can contact you to provide further
+          details.
+        </p>
+
+        <form>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="input-field"
+            required
+          /><br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input-field"
+            required
+          /><br /><br />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="input-field"
+            required
+          /><br /><br />
+
+          <label for="birth_date">Date of Birth:</label>
+          <input
+            type="date"
+            id="birth_date"
+            name="birth_date"
+            class="input-field"
+            required
+          /><br /><br />
+
+          <label for="destination">Destination of Interest:</label>
+          <select id="destination" name="destination" class="input-field">
+            <option value="europe">Europe</option>
+            <option value="americas">Americas</option>
+            <option value="asia">Asia</option>
+            <option value="africa">Africa</option>
+            <option value="others">Others</option></select
+          ><br /><br />
+
+          <label for="interests">Interests:</label><br />
+          <input
+            type="checkbox"
+            id="interest_beaches"
+            name="interests[]"
+            value="beaches"
+            class="checkbox"
+          />
+          Beaches<br />
+          <input
+            type="checkbox"
+            id="interest_adventure"
+            name="interests[]"
+            value="adventure"
+            class="checkbox"
+          />
+          Adventure<br />
+          <input
+            type="checkbox"
+            id="interest_culture"
+            name="interests[]"
+            value="culture"
+            class="checkbox"
+          />
+          Culture<br /><br />
+
+          <label for="comments">Comments:</label><br />
+          <textarea id="comments" name="comments" class="text-area"></textarea
+          ><br /><br />
+
+          <input type="submit" class="submit-button" value="Register" />
+        </form>
+
+        <a href="index.html" class="back-link">Back to Homepage</a>
+      </section>
+    </main>
+  </body>
+</html>
