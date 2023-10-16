@@ -24,7 +24,6 @@ a{
 .imgbox{
     position: relative;
     text-align: center;
-    background-color: aqua;
 }
 
 .menu{
@@ -73,12 +72,17 @@ a{
     margin: 0vh 10vw 0 10vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat((2, 1fr));
-    background-color: aqua;
 }
 
 .gallery a{
     position: relative;
     transition: box-shadow 0.1s, transform 0.1s;
+}
+
+.gallery a:hover{
+    transform: scale(1.05);
+    z-index: 3;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 mini-logo a:hover{
@@ -108,6 +112,7 @@ mini-logo a:hover{
 
 header{
     position: fixed;
+    top: 0;
     display: grid;
     align-items: center;
     background-color: white;
@@ -166,6 +171,58 @@ footer a{
     display: none;
 }
 
-#back-to-top a {
+.cronograma{
+    background-image: url('imgs/rome.jpg');
 }
 
+.cronograma section{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cronograma table{
+    width: 80%;
+    height: auto;
+    border-collapse: collapse;
+    margin: 25px auto 0 auto;
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+    min-width: 400px;
+    justify-self: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.cronograma thead{
+    height: 6vh;
+    font-size: larger;
+    background-color: rgb(235, 235, 235);
+}
+
+.cronograma th{
+    border: #f5f5f5 solid;
+}
+
+.cronograma tr{
+    height: 5vh;
+    border: 2px;
+}
+
+.cronograma td{
+    border: 1px solid;
+    border-color: rgb(211, 211, 211);
+}
+
+.cronograma-text{
+    height: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 5vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.8);
+}
