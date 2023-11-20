@@ -3,19 +3,17 @@ document.addEventListener('DOMContentLoaded', function () {
     { src: 'imgs/venice.jpg', alt: 'Venice' },
     { src: 'imgs/rome.jpg', alt: 'Rome' },
     { src: 'imgs/florence.jpg', alt: 'Florence' },
-    { src: 'imgs/milan.jpg', alt: 'Milan' },
-    { src: 'imgs/venice.jpg', alt: 'Venice' },
-    { src: 'imgs/rome.jpg', alt: 'Rome' },
-    { src: 'imgs/florence.jpg', alt: 'Florence' },
-    { src: 'imgs/milan.jpg', alt: 'Milan' },
-    { src: 'imgs/venice.jpg', alt: 'Venice' },
-    { src: 'imgs/rome.jpg', alt: 'Rome' },
-    { src: 'imgs/florence.jpg', alt: 'Florence' },
-    { src: 'imgs/milan.jpg', alt: 'Milan' },
-    { src: 'imgs/venice.jpg', alt: 'Venice' },
-    { src: 'imgs/rome.jpg', alt: 'Rome' },
-    { src: 'imgs/florence.jpg', alt: 'Florence' }
+    { src: 'imgs/milan.jpg', alt: 'Milan' }
   ]
+
+  const repetitions = 5
+  const repeatedImagesData = []
+
+  Array(repetitions)
+    .fill()
+    .forEach(() => {
+      repeatedImagesData.push(...imagesData)
+    })
 
   const galleryContainer = document.querySelector('.gallery')
 
@@ -45,12 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Adicione uma imagem inicial à galeria
-  addImageToGallery(imagesData.shift())
+  addImageToGallery(repeatedImagesData.shift())
 
   // Adicione as imagens restantes com intervalos de 1.2s
   transformToGrid()
   const intervalId = setInterval(function () {
-    const imageToAdd = imagesData.shift()
+    const imageToAdd = repeatedImagesData.shift()
     if (imageToAdd) {
       addImageToGallery(imageToAdd)
     } else {
